@@ -11,7 +11,7 @@ NodeParam: &NodeParam {type: http, interval: 3600, health-check: {enable: true, 
 # 锚点 - 节点订阅
 proxy-providers: 
   lyrebird:
-    url: 'http://38.59.246.49:38295/api/v1/client/subscribe?token=83f61716ed41f8968c35e86b21aba69b&types=hysteria2'
+    url: 'http://38.59.246.49:38295/api/v1/client/subscribe?token=83f61716ed41f8968c35e86b21aba69b'
     <<: *NodeParam
     path: './proxy_providers/lyrebird.yaml'
     override:
